@@ -12,6 +12,7 @@ grid = [[5, 3, 0, 0, 7, 0, 0, 0, 0],
 
 
 def print_grid():
+    # TODO Reformat output. And stop using numpy
     print(np.matrix(grid))
 
 
