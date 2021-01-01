@@ -11,6 +11,10 @@ grid = [[5, 3, 0, 0, 7, 0, 0, 0, 0],
         [0, 0, 0, 0, 8, 0, 0, 7, 9]]
 
 
+def print_grid():
+    print(np.matrix(grid))
+
+
 def possible(y, x, n):
     global grid
     for i in range(0, 9):
@@ -39,7 +43,7 @@ def solve():
                         solve()
                         grid[y][x] = 0
                 return
-    print(np.matrix(grid))
+    print_grid()
     input("More?")
 
 
